@@ -46,13 +46,13 @@
             this.lbAniversariantes = new System.Windows.Forms.Label();
             this.dgAniversariantes = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btProcessosnegados = new System.Windows.Forms.Button();
             this.btProcessEnviados = new System.Windows.Forms.Button();
             this.btProcessocompendencia = new System.Windows.Forms.Button();
             this.btProcessAndamento = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -236,6 +236,16 @@
             this.panel4.Size = new System.Drawing.Size(440, 566);
             this.panel4.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(197, 137);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -303,16 +313,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(856, 566);
             this.panel5.TabIndex = 8;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(186, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
             // 
             // TelaPrincipal
             // 
