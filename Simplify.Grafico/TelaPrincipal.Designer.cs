@@ -38,14 +38,14 @@
             this.txtSimplify = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btConsulta = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbConsultaprocesso = new System.Windows.Forms.TextBox();
             this.txtConsultaprocesso = new System.Windows.Forms.Label();
             this.btNovoCadastro = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbAniversariantes = new System.Windows.Forms.Label();
             this.dgAniversariantes = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbProcessoAndamento = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btProcessosnegados = new System.Windows.Forms.Button();
             this.btProcessEnviados = new System.Windows.Forms.Button();
@@ -54,6 +54,9 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbProcessosEnviados = new System.Windows.Forms.Label();
+            this.lbProcessoPendencia = new System.Windows.Forms.Label();
+            this.lbProcessoNegado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,7 +90,7 @@
             this.btEmail.AutoSize = true;
             this.btEmail.BackColor = System.Drawing.Color.DarkGray;
             this.btEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEmail.Location = new System.Drawing.Point(817, 116);
+            this.btEmail.Location = new System.Drawing.Point(815, 108);
             this.btEmail.Margin = new System.Windows.Forms.Padding(2);
             this.btEmail.Name = "btEmail";
             this.btEmail.Size = new System.Drawing.Size(111, 35);
@@ -102,7 +105,7 @@
             this.btSeguradora.AutoSize = true;
             this.btSeguradora.BackColor = System.Drawing.Color.DarkGray;
             this.btSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSeguradora.Location = new System.Drawing.Point(932, 116);
+            this.btSeguradora.Location = new System.Drawing.Point(930, 108);
             this.btSeguradora.Margin = new System.Windows.Forms.Padding(2);
             this.btSeguradora.Name = "btSeguradora";
             this.btSeguradora.Size = new System.Drawing.Size(112, 35);
@@ -117,7 +120,7 @@
             this.btDpvatonline.AutoSize = true;
             this.btDpvatonline.BackColor = System.Drawing.Color.DarkGray;
             this.btDpvatonline.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDpvatonline.Location = new System.Drawing.Point(1048, 116);
+            this.btDpvatonline.Location = new System.Drawing.Point(1046, 108);
             this.btDpvatonline.Margin = new System.Windows.Forms.Padding(2);
             this.btDpvatonline.Name = "btDpvatonline";
             this.btDpvatonline.Size = new System.Drawing.Size(118, 35);
@@ -129,18 +132,18 @@
             // 
             this.txtSimplify.AutoSize = true;
             this.txtSimplify.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)), true);
-            this.txtSimplify.Location = new System.Drawing.Point(34, 63);
+            this.txtSimplify.Location = new System.Drawing.Point(31, 97);
             this.txtSimplify.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtSimplify.Name = "txtSimplify";
-            this.txtSimplify.Size = new System.Drawing.Size(168, 46);
+            this.txtSimplify.Size = new System.Drawing.Size(319, 46);
             this.txtSimplify.TabIndex = 0;
-            this.txtSimplify.Text = "Simplify";
+            this.txtSimplify.Text = "Simplify DPVAT";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btConsulta);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.tbConsultaprocesso);
             this.panel2.Controls.Add(this.txtConsultaprocesso);
             this.panel2.Controls.Add(this.btNovoCadastro);
             this.panel2.Location = new System.Drawing.Point(1, 184);
@@ -160,14 +163,14 @@
             this.btConsulta.Text = "Consultar";
             this.btConsulta.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tbConsultaprocesso
             // 
-            this.textBox1.Location = new System.Drawing.Point(58, 143);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbConsultaprocesso.Location = new System.Drawing.Point(58, 143);
+            this.tbConsultaprocesso.Margin = new System.Windows.Forms.Padding(2);
+            this.tbConsultaprocesso.Name = "tbConsultaprocesso";
+            this.tbConsultaprocesso.Size = new System.Drawing.Size(132, 20);
+            this.tbConsultaprocesso.TabIndex = 2;
+            this.tbConsultaprocesso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtConsultaprocesso
             // 
@@ -213,9 +216,9 @@
             this.lbAniversariantes.Location = new System.Drawing.Point(38, 11);
             this.lbAniversariantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbAniversariantes.Name = "lbAniversariantes";
-            this.lbAniversariantes.Size = new System.Drawing.Size(118, 20);
+            this.lbAniversariantes.Size = new System.Drawing.Size(204, 20);
             this.lbAniversariantes.TabIndex = 1;
-            this.lbAniversariantes.Text = "Aniversariantes";
+            this.lbAniversariantes.Text = "Aniversariantes da Semana";
             this.lbAniversariantes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgAniversariantes
@@ -229,13 +232,17 @@
             this.dgAniversariantes.RowTemplate.Height = 24;
             this.dgAniversariantes.Size = new System.Drawing.Size(340, 211);
             this.dgAniversariantes.TabIndex = 0;
+            this.dgAniversariantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgAniversariantes_CellContentClick);
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.lbProcessoNegado);
+            this.panel4.Controls.Add(this.lbProcessoPendencia);
+            this.panel4.Controls.Add(this.lbProcessosEnviados);
+            this.panel4.Controls.Add(this.lbProcessoAndamento);
             this.panel4.Controls.Add(this.btProcessAndamento);
             this.panel4.Controls.Add(this.btProcessocompendencia);
             this.panel4.Controls.Add(this.label1);
@@ -247,27 +254,28 @@
             this.panel4.Size = new System.Drawing.Size(248, 444);
             this.panel4.TabIndex = 7;
             // 
-            // label2
+            // lbProcessoAndamento
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.DarkGray;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(111, 104);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbProcessoAndamento.AutoSize = true;
+            this.lbProcessoAndamento.BackColor = System.Drawing.Color.DarkGray;
+            this.lbProcessoAndamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.lbProcessoAndamento.ForeColor = System.Drawing.Color.Lime;
+            this.lbProcessoAndamento.Location = new System.Drawing.Point(111, 104);
+            this.lbProcessoAndamento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbProcessoAndamento.Name = "lbProcessoAndamento";
+            this.lbProcessoAndamento.Size = new System.Drawing.Size(25, 25);
+            this.lbProcessoAndamento.TabIndex = 5;
+            this.lbProcessoAndamento.Text = "0";
+            this.lbProcessoAndamento.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 22);
+            this.label1.Size = new System.Drawing.Size(108, 22);
             this.label1.TabIndex = 4;
             this.label1.Text = "Informativo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -358,11 +366,49 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1186, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(1184, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 134);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            // 
+            // lbProcessosEnviados
+            // 
+            this.lbProcessosEnviados.AutoSize = true;
+            this.lbProcessosEnviados.BackColor = System.Drawing.Color.DarkGray;
+            this.lbProcessosEnviados.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.lbProcessosEnviados.ForeColor = System.Drawing.Color.Blue;
+            this.lbProcessosEnviados.Location = new System.Drawing.Point(111, 204);
+            this.lbProcessosEnviados.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbProcessosEnviados.Name = "lbProcessosEnviados";
+            this.lbProcessosEnviados.Size = new System.Drawing.Size(25, 25);
+            this.lbProcessosEnviados.TabIndex = 6;
+            this.lbProcessosEnviados.Text = "0";
+            // 
+            // lbProcessoPendencia
+            // 
+            this.lbProcessoPendencia.AutoSize = true;
+            this.lbProcessoPendencia.BackColor = System.Drawing.Color.DarkGray;
+            this.lbProcessoPendencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.lbProcessoPendencia.ForeColor = System.Drawing.Color.Yellow;
+            this.lbProcessoPendencia.Location = new System.Drawing.Point(111, 304);
+            this.lbProcessoPendencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbProcessoPendencia.Name = "lbProcessoPendencia";
+            this.lbProcessoPendencia.Size = new System.Drawing.Size(25, 25);
+            this.lbProcessoPendencia.TabIndex = 7;
+            this.lbProcessoPendencia.Text = "0";
+            // 
+            // lbProcessoNegado
+            // 
+            this.lbProcessoNegado.AutoSize = true;
+            this.lbProcessoNegado.BackColor = System.Drawing.Color.DarkGray;
+            this.lbProcessoNegado.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
+            this.lbProcessoNegado.ForeColor = System.Drawing.Color.Red;
+            this.lbProcessoNegado.Location = new System.Drawing.Point(113, 404);
+            this.lbProcessoNegado.Name = "lbProcessoNegado";
+            this.lbProcessoNegado.Size = new System.Drawing.Size(25, 25);
+            this.lbProcessoNegado.TabIndex = 8;
+            this.lbProcessoNegado.Text = "0";
             // 
             // TelaPrincipal
             // 
@@ -405,7 +451,7 @@
         private System.Windows.Forms.Button btDpvatonline;
         private System.Windows.Forms.Label txtSimplify;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbConsultaprocesso;
         private System.Windows.Forms.Label txtConsultaprocesso;
         private System.Windows.Forms.Button btNovoCadastro;
         private System.Windows.Forms.Panel panel3;
@@ -419,9 +465,12 @@
         private System.Windows.Forms.Button btProcessAndamento;
         private System.Windows.Forms.Button btConsulta;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbProcessoAndamento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lbProcessoNegado;
+        private System.Windows.Forms.Label lbProcessoPendencia;
+        private System.Windows.Forms.Label lbProcessosEnviados;
     }
 }
 

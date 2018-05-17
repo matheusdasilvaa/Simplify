@@ -168,6 +168,11 @@ namespace Simplify.Grafico
         {
 
         }
+
+        private void dgAniversariantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     }
 
