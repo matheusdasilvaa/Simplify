@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Simplify.Grafico
 {
-    public partial class ManterCliente : Form
+    public partial class TelaProcessosCadastrados : Form
     {
-        public ManterCliente()
+        public TelaProcessosCadastrados()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ManterCliente_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

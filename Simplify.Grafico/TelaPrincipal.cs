@@ -117,6 +117,25 @@ namespace Simplify.Grafico
         {
             System.Diagnostics.Process.Start("http://www.gmail.com");
         }
+
+        private void btNovoCadastro_Click(object sender, EventArgs e)
+        {
+            ManterCliente mantercliente = new ManterCliente();
+            mantercliente.Show();
+        }
+
+        private void btProcessAndamento_Click(object sender, EventArgs e)
+        {
+            TelaProcessosCadastrados telacadastrados = new TelaProcessosCadastrados();
+            telacadastrados.MdiParent = this;
+            panel5.Controls.Add(telacadastrados);
+            telacadastrados.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
