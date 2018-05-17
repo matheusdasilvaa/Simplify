@@ -66,6 +66,24 @@
     <Compile Include="telaProcessosCadastrados.Designer.cs">
       <DependentUpon>telaProcessosCadastrados.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaProcessosEnviados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProcessosEnviados.Designer.cs">
+      <DependentUpon>TelaProcessosEnviados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProcessosNegados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProcessosNegados.Designer.cs">
+      <DependentUpon>TelaProcessosNegados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaProcessosPendencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProcessosPendencia.Designer.cs">
+      <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ManterCliente.resx">
       <DependentUpon>ManterCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +101,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="telaProcessosCadastrados.resx">
       <DependentUpon>telaProcessosCadastrados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProcessosEnviados.resx">
+      <DependentUpon>TelaProcessosEnviados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProcessosNegados.resx">
+      <DependentUpon>TelaProcessosNegados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProcessosPendencia.resx">
+      <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

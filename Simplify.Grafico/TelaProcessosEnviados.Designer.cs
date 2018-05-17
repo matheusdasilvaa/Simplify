@@ -1,6 +1,6 @@
 ﻿namespace Simplify.Grafico
 {
-    partial class TelaProcessosAndamento
+    partial class TelaProcessosEnviados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,46 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgProcessosCadastrados = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgProcessosCadastrados)).BeginInit();
+            this.dgProcessosEnviados = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgProcessosEnviados)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgProcessosCadastrados
+            // dgProcessosEnviados
             // 
-            this.dgProcessosCadastrados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgProcessosEnviados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgProcessosCadastrados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgProcessosCadastrados.Location = new System.Drawing.Point(2, 2);
-            this.dgProcessosCadastrados.Margin = new System.Windows.Forms.Padding(2);
-            this.dgProcessosCadastrados.Name = "dgProcessosCadastrados";
-            this.dgProcessosCadastrados.RowTemplate.Height = 24;
-            this.dgProcessosCadastrados.Size = new System.Drawing.Size(353, 426);
-            this.dgProcessosCadastrados.TabIndex = 0;
+            this.dgProcessosEnviados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgProcessosEnviados.Location = new System.Drawing.Point(1, 2);
+            this.dgProcessosEnviados.Name = "dgProcessosEnviados";
+            this.dgProcessosEnviados.Size = new System.Drawing.Size(353, 429);
+            this.dgProcessosEnviados.TabIndex = 0;
             // 
-            // TelaProcessosAndamento
+            // TelaProcessosEnviados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(358, 434);
-            this.Controls.Add(this.dgProcessosCadastrados);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Controls.Add(this.dgProcessosEnviados);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "TelaProcessosAndamento";
+            this.Name = "TelaProcessosEnviados";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Processos em andamento";
+            this.Text = "Processos Enviados";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.TelaProcessosAndamento_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgProcessosCadastrados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgProcessosEnviados)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgProcessosCadastrados;
+        private System.Windows.Forms.DataGridView dgProcessosEnviados;
     }
 }

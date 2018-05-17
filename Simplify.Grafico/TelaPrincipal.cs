@@ -121,18 +121,50 @@ namespace Simplify.Grafico
         private void btNovoCadastro_Click(object sender, EventArgs e)
         {
             ManterCliente mantercliente = new ManterCliente();
+            mantercliente.MdiParent = this;
+            panel5.Controls.Add(mantercliente);
             mantercliente.Show();
         }
 
         private void btProcessAndamento_Click(object sender, EventArgs e)
         {
-            TelaProcessosCadastrados telacadastrados = new TelaProcessosCadastrados();
-            telacadastrados.MdiParent = this;
-            panel5.Controls.Add(telacadastrados);
-            telacadastrados.Show();
+            TelaProcessosAndamento telaandamento = new TelaProcessosAndamento();
+            telaandamento.MdiParent = this;
+            panel5.Controls.Add(telaandamento);
+            telaandamento.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btProcessEnviados_Click(object sender, EventArgs e)
+        {
+            TelaProcessosEnviados telaenviados = new TelaProcessosEnviados();
+            telaenviados.MdiParent = this;
+            panel5.Controls.Add(telaenviados);
+            telaenviados.Show();
+
+        }
+
+        private void btProcessocompendencia_Click(object sender, EventArgs e)
+        {
+            TelaProcessosPendencia telapendencia = new TelaProcessosPendencia();
+            telapendencia.MdiParent = this;
+            panel5.Controls.Add(telapendencia);
+            telapendencia.Show();
+        }
+
+        private void btProcessosnegados_Click(object sender, EventArgs e)
+        {
+            TelaProcessosNegados telanegados = new TelaProcessosNegados();
+            telanegados.MdiParent = this;
+            panel5.Controls.Add(telanegados);
+            telanegados.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

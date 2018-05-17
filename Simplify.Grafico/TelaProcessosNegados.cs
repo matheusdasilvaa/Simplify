@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Simplify.Grafico
 {
-    public partial class TelaProcessosAndamento : Form
+    public partial class TelaProcessosNegados : Form
     {
-        public TelaProcessosAndamento()
+        public TelaProcessosNegados()
         {
             InitializeComponent();
-        }
-
-        private void TelaProcessosAndamento_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
