@@ -38,6 +38,7 @@
             this.btDpvatonline = new System.Windows.Forms.Button();
             this.txtSimplify = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btConsulta = new System.Windows.Forms.Button();
             this.txtConsultaprocesso = new System.Windows.Forms.Label();
             this.btNovoCadastro = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.btProcessosnegados = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -89,7 +89,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1579, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(160, 165);
             this.pictureBox1.TabIndex = 13;
@@ -101,7 +101,7 @@
             this.btEmail.AutoSize = true;
             this.btEmail.BackColor = System.Drawing.Color.DarkGray;
             this.btEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEmail.Location = new System.Drawing.Point(1087, 133);
+            this.btEmail.Location = new System.Drawing.Point(1048, 133);
             this.btEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btEmail.Name = "btEmail";
             this.btEmail.Size = new System.Drawing.Size(148, 43);
@@ -116,7 +116,7 @@
             this.btSeguradora.AutoSize = true;
             this.btSeguradora.BackColor = System.Drawing.Color.DarkGray;
             this.btSeguradora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSeguradora.Location = new System.Drawing.Point(1228, 133);
+            this.btSeguradora.Location = new System.Drawing.Point(1203, 133);
             this.btSeguradora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSeguradora.Name = "btSeguradora";
             this.btSeguradora.Size = new System.Drawing.Size(161, 43);
@@ -161,6 +161,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(467, 287);
             this.panel2.TabIndex = 5;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(77, 210);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(169, 41);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
             // 
             // btConsulta
             // 
@@ -395,15 +404,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Resultados";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(77, 210);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(169, 41);
-            this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "";
-            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -418,7 +418,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaPrincipal";
             this.Text = "Simplify DPVAT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -134,5 +134,10 @@ namespace Simplify.Grafico
         {
 
         }
+
+        private void tabAnexos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
