@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,6 +60,10 @@
             this.btProcessosnegados = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.grafico = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.cbgraficoprocessosCadastrados = new System.Windows.Forms.CheckBox();
+            this.cbGraficoprocessosnegado = new System.Windows.Forms.CheckBox();
+            this.cbGraficoprocessosconcluidos = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -64,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgAniversariantes)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grafico)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,16 +173,16 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(77, 210);
+            this.richTextBox1.Location = new System.Drawing.Point(51, 210);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(169, 41);
+            this.richTextBox1.Size = new System.Drawing.Size(216, 41);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // btConsulta
             // 
             this.btConsulta.BackColor = System.Drawing.Color.DarkGray;
-            this.btConsulta.Location = new System.Drawing.Point(275, 210);
+            this.btConsulta.Location = new System.Drawing.Point(296, 210);
             this.btConsulta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btConsulta.Name = "btConsulta";
             this.btConsulta.Size = new System.Drawing.Size(101, 41);
@@ -387,6 +395,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel5.Controls.Add(this.cbGraficoprocessosconcluidos);
+            this.panel5.Controls.Add(this.cbGraficoprocessosnegado);
+            this.panel5.Controls.Add(this.cbgraficoprocessosCadastrados);
+            this.panel5.Controls.Add(this.grafico);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Location = new System.Drawing.Point(809, 226);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -403,6 +415,56 @@
             this.label3.Size = new System.Drawing.Size(131, 26);
             this.label3.TabIndex = 0;
             this.label3.Text = "Resultados";
+            // 
+            // grafico
+            // 
+            this.grafico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grafico.BackColor = System.Drawing.Color.Gainsboro;
+            chartArea2.Name = "ChartArea1";
+            this.grafico.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.grafico.Legends.Add(legend2);
+            this.grafico.Location = new System.Drawing.Point(40, 62);
+            this.grafico.Name = "grafico";
+            this.grafico.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.grafico.Series.Add(series2);
+            this.grafico.Size = new System.Drawing.Size(917, 381);
+            this.grafico.TabIndex = 1;
+            this.grafico.Text = "chart1";
+            // 
+            // cbgraficoprocessosCadastrados
+            // 
+            this.cbgraficoprocessosCadastrados.AutoSize = true;
+            this.cbgraficoprocessosCadastrados.Location = new System.Drawing.Point(57, 497);
+            this.cbgraficoprocessosCadastrados.Name = "cbgraficoprocessosCadastrados";
+            this.cbgraficoprocessosCadastrados.Size = new System.Drawing.Size(180, 21);
+            this.cbgraficoprocessosCadastrados.TabIndex = 2;
+            this.cbgraficoprocessosCadastrados.Text = "Processos Cadastrados";
+            this.cbgraficoprocessosCadastrados.UseVisualStyleBackColor = true;
+            // 
+            // cbGraficoprocessosnegado
+            // 
+            this.cbGraficoprocessosnegado.AutoSize = true;
+            this.cbGraficoprocessosnegado.Location = new System.Drawing.Point(563, 497);
+            this.cbGraficoprocessosnegado.Name = "cbGraficoprocessosnegado";
+            this.cbGraficoprocessosnegado.Size = new System.Drawing.Size(157, 21);
+            this.cbGraficoprocessosnegado.TabIndex = 3;
+            this.cbGraficoprocessosnegado.Text = "Processos Negados";
+            this.cbGraficoprocessosnegado.UseVisualStyleBackColor = true;
+            // 
+            // cbGraficoprocessosconcluidos
+            // 
+            this.cbGraficoprocessosconcluidos.AutoSize = true;
+            this.cbGraficoprocessosconcluidos.Location = new System.Drawing.Point(315, 497);
+            this.cbGraficoprocessosconcluidos.Name = "cbGraficoprocessosconcluidos";
+            this.cbGraficoprocessosconcluidos.Size = new System.Drawing.Size(169, 21);
+            this.cbGraficoprocessosconcluidos.TabIndex = 4;
+            this.cbGraficoprocessosconcluidos.Text = "Processos Concluídos";
+            this.cbGraficoprocessosconcluidos.UseVisualStyleBackColor = true;
             // 
             // TelaPrincipal
             // 
@@ -434,6 +496,7 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grafico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,6 +529,10 @@
         private System.Windows.Forms.Label lbProcessoPendencia;
         private System.Windows.Forms.Label lbProcessosEnviados;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart grafico;
+        private System.Windows.Forms.CheckBox cbGraficoprocessosconcluidos;
+        private System.Windows.Forms.CheckBox cbGraficoprocessosnegado;
+        private System.Windows.Forms.CheckBox cbgraficoprocessosCadastrados;
     }
 }
 
