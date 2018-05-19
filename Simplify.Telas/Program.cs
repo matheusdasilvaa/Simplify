@@ -9,7 +9,7 @@ namespace Simplify.Telas
     class Program
     {
         static void Main(string[] args)
-        {  
+        {
         }
     }
 }

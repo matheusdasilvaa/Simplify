@@ -135,7 +135,12 @@ namespace Simplify.Grafico
 
         }
 
-        private void tabAnexos_Click(object sender, EventArgs e)
+        private void rbCartaoentregue_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbCartaobanco_Enter(object sender, EventArgs e)
         {
 
         }
