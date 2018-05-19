@@ -173,6 +173,8 @@ namespace Simplify.Grafico
         {
 
         }
+
+        
     }
     }
 
