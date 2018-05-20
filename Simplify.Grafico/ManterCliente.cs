@@ -80,6 +80,7 @@ namespace Simplify.Grafico
         {
             Cliente cliente = new Cliente();
             /*Dados Pessoais*/
+            cliente.Id = tbId.Text;
             cliente.Nome_dados = tbNome.Text;
             cliente.Indicacao_dados = tbindicacao.Text;
             cliente.Nascimento_dados = tbNascimento.Text;
@@ -141,6 +142,11 @@ namespace Simplify.Grafico
         }
 
         private void gbCartaobanco_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label42_Click(object sender, EventArgs e)
         {
 
         }
