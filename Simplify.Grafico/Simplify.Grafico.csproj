@@ -11,6 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -47,7 +47,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -105,6 +112,12 @@
     <Compile Include="TelaProcessosPendencia.Designer.cs">
       <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaRelatorio.Designer.cs">
+      <DependentUpon>TelaRelatorio.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ManterCliente.resx">
       <DependentUpon>ManterCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +148,13 @@
     <EmbeddedResource Include="TelaProcessosPendencia.resx">
       <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <None Include="packages.config" />
+=======
+    <EmbeddedResource Include="TelaRelatorio.resx">
+      <DependentUpon>TelaRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 511a554a56063e79992ad885e54fb51b36fb3bd5
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -170,5 +190,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="Simplify.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Simplify_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Simplify.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+>>>>>>> 511a554a56063e79992ad885e54fb51b36fb3bd5
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
