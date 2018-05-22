@@ -48,6 +48,8 @@
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.ctCadastro = new System.Windows.Forms.TabControl();
             this.tabcadastrocliente = new System.Windows.Forms.TabPage();
+            this.tbId = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.abaEndereco = new System.Windows.Forms.TabPage();
             this.tbCidade2 = new System.Windows.Forms.TextBox();
             this.tbBairro2 = new System.Windows.Forms.TextBox();
@@ -162,8 +164,6 @@
             this.tabObservacoes = new System.Windows.Forms.TabPage();
             this.rtbAbaObservacoes = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tbId = new System.Windows.Forms.Label();
             this.ctCadastro.SuspendLayout();
             this.tabcadastrocliente.SuspendLayout();
             this.abaEndereco.SuspendLayout();
@@ -183,7 +183,7 @@
             // 
             this.tbNome.BackColor = System.Drawing.Color.White;
             this.tbNome.Location = new System.Drawing.Point(147, 35);
-            this.tbNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNome.Margin = new System.Windows.Forms.Padding(2);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(200, 20);
             this.tbNome.TabIndex = 0;
@@ -191,7 +191,7 @@
             // tbindicacao
             // 
             this.tbindicacao.Location = new System.Drawing.Point(147, 75);
-            this.tbindicacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbindicacao.Margin = new System.Windows.Forms.Padding(2);
             this.tbindicacao.Name = "tbindicacao";
             this.tbindicacao.Size = new System.Drawing.Size(200, 20);
             this.tbindicacao.TabIndex = 1;
@@ -200,7 +200,7 @@
             // tbNascimento
             // 
             this.tbNascimento.Location = new System.Drawing.Point(147, 115);
-            this.tbNascimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNascimento.Margin = new System.Windows.Forms.Padding(2);
             this.tbNascimento.Name = "tbNascimento";
             this.tbNascimento.Size = new System.Drawing.Size(200, 20);
             this.tbNascimento.TabIndex = 2;
@@ -208,7 +208,7 @@
             // tbRG
             // 
             this.tbRG.Location = new System.Drawing.Point(147, 155);
-            this.tbRG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbRG.Margin = new System.Windows.Forms.Padding(2);
             this.tbRG.Name = "tbRG";
             this.tbRG.Size = new System.Drawing.Size(200, 20);
             this.tbRG.TabIndex = 5;
@@ -216,7 +216,7 @@
             // tbProfissao
             // 
             this.tbProfissao.Location = new System.Drawing.Point(147, 235);
-            this.tbProfissao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbProfissao.Margin = new System.Windows.Forms.Padding(2);
             this.tbProfissao.Name = "tbProfissao";
             this.tbProfissao.Size = new System.Drawing.Size(200, 20);
             this.tbProfissao.TabIndex = 4;
@@ -224,7 +224,7 @@
             // tbCpf
             // 
             this.tbCpf.Location = new System.Drawing.Point(147, 195);
-            this.tbCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCpf.Margin = new System.Windows.Forms.Padding(2);
             this.tbCpf.Name = "tbCpf";
             this.tbCpf.Size = new System.Drawing.Size(200, 20);
             this.tbCpf.TabIndex = 3;
@@ -233,7 +233,7 @@
             // tbEstadoCivil
             // 
             this.tbEstadoCivil.Location = new System.Drawing.Point(147, 315);
-            this.tbEstadoCivil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEstadoCivil.Margin = new System.Windows.Forms.Padding(2);
             this.tbEstadoCivil.Name = "tbEstadoCivil";
             this.tbEstadoCivil.Size = new System.Drawing.Size(200, 20);
             this.tbEstadoCivil.TabIndex = 8;
@@ -241,7 +241,7 @@
             // tbSexo
             // 
             this.tbSexo.Location = new System.Drawing.Point(147, 275);
-            this.tbSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSexo.Margin = new System.Windows.Forms.Padding(2);
             this.tbSexo.Name = "tbSexo";
             this.tbSexo.Size = new System.Drawing.Size(200, 20);
             this.tbSexo.TabIndex = 6;
@@ -342,7 +342,7 @@
             // 
             this.bt_salvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_salvar.Location = new System.Drawing.Point(638, 440);
-            this.bt_salvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_salvar.Margin = new System.Windows.Forms.Padding(2);
             this.bt_salvar.Name = "bt_salvar";
             this.bt_salvar.Size = new System.Drawing.Size(77, 37);
             this.bt_salvar.TabIndex = 17;
@@ -354,12 +354,13 @@
             // 
             this.bt_cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bt_cancelar.Location = new System.Drawing.Point(719, 440);
-            this.bt_cancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_cancelar.Margin = new System.Windows.Forms.Padding(2);
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(77, 37);
             this.bt_cancelar.TabIndex = 18;
             this.bt_cancelar.Text = "Cancelar";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // ctCadastro
             // 
@@ -375,7 +376,7 @@
             this.ctCadastro.Controls.Add(this.tabAnexos);
             this.ctCadastro.Controls.Add(this.tabObservacoes);
             this.ctCadastro.Location = new System.Drawing.Point(9, 10);
-            this.ctCadastro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ctCadastro.Margin = new System.Windows.Forms.Padding(2);
             this.ctCadastro.Name = "ctCadastro";
             this.ctCadastro.SelectedIndex = 0;
             this.ctCadastro.Size = new System.Drawing.Size(788, 425);
@@ -403,12 +404,33 @@
             this.tabcadastrocliente.Controls.Add(this.tbEstadoCivil);
             this.tabcadastrocliente.Controls.Add(this.Indicacao);
             this.tabcadastrocliente.Location = new System.Drawing.Point(4, 22);
-            this.tabcadastrocliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabcadastrocliente.Margin = new System.Windows.Forms.Padding(2);
             this.tabcadastrocliente.Name = "tabcadastrocliente";
-            this.tabcadastrocliente.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabcadastrocliente.Padding = new System.Windows.Forms.Padding(2);
             this.tabcadastrocliente.Size = new System.Drawing.Size(780, 399);
             this.tabcadastrocliente.TabIndex = 0;
             this.tabcadastrocliente.Text = "Dados Pessoais";
+            // 
+            // tbId
+            // 
+            this.tbId.AutoSize = true;
+            this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbId.Location = new System.Drawing.Point(20, 9);
+            this.tbId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbId.Name = "tbId";
+            this.tbId.Size = new System.Drawing.Size(49, 15);
+            this.tbId.TabIndex = 18;
+            this.tbId.Text = "id teste:";
+            this.tbId.Click += new System.EventHandler(this.label42_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(147, 8);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.TabIndex = 17;
             // 
             // abaEndereco
             // 
@@ -442,9 +464,9 @@
             this.abaEndereco.Controls.Add(this.tbRua1);
             this.abaEndereco.Controls.Add(this.tbEndereco1);
             this.abaEndereco.Location = new System.Drawing.Point(4, 22);
-            this.abaEndereco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.abaEndereco.Margin = new System.Windows.Forms.Padding(2);
             this.abaEndereco.Name = "abaEndereco";
-            this.abaEndereco.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.abaEndereco.Padding = new System.Windows.Forms.Padding(2);
             this.abaEndereco.Size = new System.Drawing.Size(780, 399);
             this.abaEndereco.TabIndex = 1;
             this.abaEndereco.Text = "Endereço";
@@ -711,7 +733,7 @@
             this.tabContato.Controls.Add(this.label15);
             this.tabContato.Location = new System.Drawing.Point(4, 22);
             this.tabContato.Name = "tabContato";
-            this.tabContato.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabContato.Padding = new System.Windows.Forms.Padding(3);
             this.tabContato.Size = new System.Drawing.Size(780, 399);
             this.tabContato.TabIndex = 2;
             this.tabContato.Text = "Contato";
@@ -889,7 +911,7 @@
             this.tabOcorrencia.Controls.Add(this.label24);
             this.tabOcorrencia.Location = new System.Drawing.Point(4, 22);
             this.tabOcorrencia.Name = "tabOcorrencia";
-            this.tabOcorrencia.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabOcorrencia.Padding = new System.Windows.Forms.Padding(3);
             this.tabOcorrencia.Size = new System.Drawing.Size(780, 399);
             this.tabOcorrencia.TabIndex = 3;
             this.tabOcorrencia.Text = "Ocorrência";
@@ -899,9 +921,9 @@
             this.gbINSSAcidente.Controls.Add(this.rbINSSsim);
             this.gbINSSAcidente.Controls.Add(this.rbINSSnao);
             this.gbINSSAcidente.Location = new System.Drawing.Point(147, 186);
-            this.gbINSSAcidente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbINSSAcidente.Margin = new System.Windows.Forms.Padding(2);
             this.gbINSSAcidente.Name = "gbINSSAcidente";
-            this.gbINSSAcidente.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbINSSAcidente.Padding = new System.Windows.Forms.Padding(2);
             this.gbINSSAcidente.Size = new System.Drawing.Size(140, 32);
             this.gbINSSAcidente.TabIndex = 24;
             this.gbINSSAcidente.TabStop = false;
@@ -936,9 +958,9 @@
             this.gbTipoAcidente.Controls.Add(this.rbTipo);
             this.gbTipoAcidente.Controls.Add(this.rbTrabalho);
             this.gbTipoAcidente.Location = new System.Drawing.Point(147, 149);
-            this.gbTipoAcidente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbTipoAcidente.Margin = new System.Windows.Forms.Padding(2);
             this.gbTipoAcidente.Name = "gbTipoAcidente";
-            this.gbTipoAcidente.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbTipoAcidente.Padding = new System.Windows.Forms.Padding(2);
             this.gbTipoAcidente.Size = new System.Drawing.Size(215, 24);
             this.gbTipoAcidente.TabIndex = 23;
             this.gbTipoAcidente.TabStop = false;
@@ -1171,7 +1193,7 @@
             this.tabAnexos.Controls.Add(this.gbProntuario);
             this.tabAnexos.Location = new System.Drawing.Point(4, 22);
             this.tabAnexos.Name = "tabAnexos";
-            this.tabAnexos.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabAnexos.Padding = new System.Windows.Forms.Padding(3);
             this.tabAnexos.Size = new System.Drawing.Size(780, 399);
             this.tabAnexos.TabIndex = 4;
             this.tabAnexos.Text = "Anexos";
@@ -1181,9 +1203,9 @@
             this.gbComprovante.Controls.Add(this.rbComprovanteentregue);
             this.gbComprovante.Controls.Add(this.rbComprovantependente);
             this.gbComprovante.Location = new System.Drawing.Point(399, 115);
-            this.gbComprovante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbComprovante.Margin = new System.Windows.Forms.Padding(2);
             this.gbComprovante.Name = "gbComprovante";
-            this.gbComprovante.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbComprovante.Padding = new System.Windows.Forms.Padding(2);
             this.gbComprovante.Size = new System.Drawing.Size(215, 23);
             this.gbComprovante.TabIndex = 36;
             this.gbComprovante.TabStop = false;
@@ -1218,9 +1240,9 @@
             this.gbCartaobanco.Controls.Add(this.rbCartaoentregue);
             this.gbCartaobanco.Controls.Add(this.rbCartaopendente);
             this.gbCartaobanco.Location = new System.Drawing.Point(407, 150);
-            this.gbCartaobanco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbCartaobanco.Margin = new System.Windows.Forms.Padding(2);
             this.gbCartaobanco.Name = "gbCartaobanco";
-            this.gbCartaobanco.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbCartaobanco.Padding = new System.Windows.Forms.Padding(2);
             this.gbCartaobanco.Size = new System.Drawing.Size(185, 28);
             this.gbCartaobanco.TabIndex = 35;
             this.gbCartaobanco.TabStop = false;
@@ -1256,9 +1278,9 @@
             this.gbBoletimOcorrencia.Controls.Add(this.rbBOpendente);
             this.gbBoletimOcorrencia.Controls.Add(this.rbBOentregue);
             this.gbBoletimOcorrencia.Location = new System.Drawing.Point(407, 35);
-            this.gbBoletimOcorrencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbBoletimOcorrencia.Margin = new System.Windows.Forms.Padding(2);
             this.gbBoletimOcorrencia.Name = "gbBoletimOcorrencia";
-            this.gbBoletimOcorrencia.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbBoletimOcorrencia.Padding = new System.Windows.Forms.Padding(2);
             this.gbBoletimOcorrencia.Size = new System.Drawing.Size(181, 35);
             this.gbBoletimOcorrencia.TabIndex = 32;
             this.gbBoletimOcorrencia.TabStop = false;
@@ -1558,9 +1580,9 @@
             this.gbProntuario.BackColor = System.Drawing.Color.Transparent;
             this.gbProntuario.Controls.Add(this.gbComprovanteRes);
             this.gbProntuario.Location = new System.Drawing.Point(399, 75);
-            this.gbProntuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProntuario.Margin = new System.Windows.Forms.Padding(2);
             this.gbProntuario.Name = "gbProntuario";
-            this.gbProntuario.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProntuario.Padding = new System.Windows.Forms.Padding(2);
             this.gbProntuario.Size = new System.Drawing.Size(206, 23);
             this.gbProntuario.TabIndex = 33;
             this.gbProntuario.TabStop = false;
@@ -1569,9 +1591,9 @@
             // 
             this.gbComprovanteRes.BackColor = System.Drawing.Color.Transparent;
             this.gbComprovanteRes.Location = new System.Drawing.Point(204, 4);
-            this.gbComprovanteRes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbComprovanteRes.Margin = new System.Windows.Forms.Padding(2);
             this.gbComprovanteRes.Name = "gbComprovanteRes";
-            this.gbComprovanteRes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbComprovanteRes.Padding = new System.Windows.Forms.Padding(2);
             this.gbComprovanteRes.Size = new System.Drawing.Size(231, 24);
             this.gbComprovanteRes.TabIndex = 34;
             this.gbComprovanteRes.TabStop = false;
@@ -1582,7 +1604,7 @@
             this.tabObservacoes.Controls.Add(this.rtbAbaObservacoes);
             this.tabObservacoes.Location = new System.Drawing.Point(4, 22);
             this.tabObservacoes.Name = "tabObservacoes";
-            this.tabObservacoes.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabObservacoes.Padding = new System.Windows.Forms.Padding(3);
             this.tabObservacoes.Size = new System.Drawing.Size(780, 399);
             this.tabObservacoes.TabIndex = 5;
             this.tabObservacoes.Text = "Observações";
@@ -1599,27 +1621,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(147, 8);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 17;
-            // 
-            // tbId
-            // 
-            this.tbId.AutoSize = true;
-            this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbId.Location = new System.Drawing.Point(20, 9);
-            this.tbId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(49, 15);
-            this.tbId.TabIndex = 18;
-            this.tbId.Text = "id teste:";
-            this.tbId.Click += new System.EventHandler(this.label42_Click);
-            // 
             // ManterCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1629,7 +1630,7 @@
             this.Controls.Add(this.ctCadastro);
             this.Controls.Add(this.bt_cancelar);
             this.Controls.Add(this.bt_salvar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ManterCliente";
