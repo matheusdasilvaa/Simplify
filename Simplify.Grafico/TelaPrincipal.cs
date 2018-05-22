@@ -174,7 +174,13 @@ namespace Simplify.Grafico
 
         }
 
-        
+        private void btRelatorios_Click(object sender, EventArgs e)
+        {
+            TelaRelatorio telaRelatorio = new TelaRelatorio();
+            telaRelatorio.MdiParent = this;
+            panel5.Controls.Add(telaRelatorio);
+            telaRelatorio.Show();
+        }
     }
     }
 
