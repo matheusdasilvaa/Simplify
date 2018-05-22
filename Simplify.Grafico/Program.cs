@@ -18,6 +18,7 @@ namespace Simplify.Grafico
         [STAThread]
         static void Main()
         {
+<<<<<<< HEAD
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            /* Application.Run(new TelaLogin());
@@ -25,10 +26,15 @@ namespace Simplify.Grafico
             Application.SetCompatibleTextRenderingDefault(false);*/
 
             // O Form2 é o meu Login, aqui no exemplo, então vou exibi-lo
+=======
+            
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+>>>>>>> 511a554a56063e79992ad885e54fb51b36fb3bd5
             TelaLogin telalogin = new TelaLogin();
 
-            // Se o OK for pressionado, eu abro o aplicativo, senão eu saio
             if (telalogin.ShowDialog() == DialogResult.OK)
+
                 Application.Run(new TelaPrincipal());
 
 

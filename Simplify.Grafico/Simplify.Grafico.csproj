@@ -112,6 +112,12 @@
     <Compile Include="TelaProcessosPendencia.Designer.cs">
       <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaRelatorio.Designer.cs">
+      <DependentUpon>TelaRelatorio.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ManterCliente.resx">
       <DependentUpon>ManterCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,7 +148,13 @@
     <EmbeddedResource Include="TelaProcessosPendencia.resx">
       <DependentUpon>TelaProcessosPendencia.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <None Include="packages.config" />
+=======
+    <EmbeddedResource Include="TelaRelatorio.resx">
+      <DependentUpon>TelaRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 511a554a56063e79992ad885e54fb51b36fb3bd5
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,5 +190,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="Simplify.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Simplify_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Simplify.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+>>>>>>> 511a554a56063e79992ad885e54fb51b36fb3bd5
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
