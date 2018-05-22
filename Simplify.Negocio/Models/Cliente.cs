@@ -1,22 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Simplify.Negocio.Models
 {
+    [Table(name: "Clientes")]
     public class Cliente
     {
-        /*Dados Pessoais*/
+        /*Dados Pessoais
         public long Id { get; set; }
         public String Nome_dados { get; set; }
         public String Indicacao_dados { get; set; }
         public DateTime Nascimento_dados { get; set; }
-        public Int32 CPF_dados { get; set; }
-        public Int32 RG_dados { get; set; }
+        public long CPF_dados { get; set; }
+        public long RG_dados { get; set; }
         public String Profissao_dados { get; set; }
-        public bool Sexo_dados { get; set; }
+        public char Sexo_dados { get; set; }
         public String EstadoCivil_dados { get; set; }
         //Endereço1
         public String Endereco_endereco1 { get; set; }
@@ -56,8 +58,8 @@ namespace Simplify.Negocio.Models
         public String Observacao_ocorrencia { get; set; }
         //Observaçoes
         public String Observacao_observacao { get; set; }
-        /*
-
+        
+        */
         //Dados Pessoais
         public String Id { get; set; }
         public String Nome_dados { get; set; }
@@ -105,7 +107,21 @@ namespace Simplify.Negocio.Models
         public String Hospital_ocorrencia { get; set; }
         public String Observacao_ocorrencia { get; set; }
         //Observaçoes
-        public String Observacao_observacao { get; set; }*/
+        public String Observacao_observacao { get; set; }
+
+        [NotMapped]
+        public String Descricao
+        {
+            get
+            {
+                return this.CPF_dados + " - " + this.Nome_dados;
+            }
+        }
+
+        public String Descrever()
+        {
+            return String.Format($"{this.Id} - {this.CPF_dados} - {this.Nome_dados} - {this.Email_contato}");
+        }
     }
 
 }

@@ -48,8 +48,6 @@
             this.bt_cancelar = new System.Windows.Forms.Button();
             this.ctCadastro = new System.Windows.Forms.TabControl();
             this.tabcadastrocliente = new System.Windows.Forms.TabPage();
-            this.tbId = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.abaEndereco = new System.Windows.Forms.TabPage();
             this.tbCidade2 = new System.Windows.Forms.TextBox();
             this.tbBairro2 = new System.Windows.Forms.TextBox();
@@ -187,6 +185,7 @@
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(200, 20);
             this.tbNome.TabIndex = 0;
+            this.tbNome.TextChanged += new System.EventHandler(this.tbNome_TextChanged);
             // 
             // tbindicacao
             // 
@@ -215,7 +214,7 @@
             // 
             // tbProfissao
             // 
-            this.tbProfissao.Location = new System.Drawing.Point(147, 235);
+            this.tbProfissao.Location = new System.Drawing.Point(147, 275);
             this.tbProfissao.Margin = new System.Windows.Forms.Padding(2);
             this.tbProfissao.Name = "tbProfissao";
             this.tbProfissao.Size = new System.Drawing.Size(200, 20);
@@ -240,7 +239,7 @@
             // 
             // tbSexo
             // 
-            this.tbSexo.Location = new System.Drawing.Point(147, 275);
+            this.tbSexo.Location = new System.Drawing.Point(147, 235);
             this.tbSexo.Margin = new System.Windows.Forms.Padding(2);
             this.tbSexo.Name = "tbSexo";
             this.tbSexo.Size = new System.Drawing.Size(200, 20);
@@ -385,8 +384,6 @@
             // tabcadastrocliente
             // 
             this.tabcadastrocliente.BackColor = System.Drawing.Color.Gainsboro;
-            this.tabcadastrocliente.Controls.Add(this.tbId);
-            this.tabcadastrocliente.Controls.Add(this.textBox1);
             this.tabcadastrocliente.Controls.Add(this.Nome);
             this.tabcadastrocliente.Controls.Add(this.tbNome);
             this.tabcadastrocliente.Controls.Add(this.tbindicacao);
@@ -410,27 +407,6 @@
             this.tabcadastrocliente.Size = new System.Drawing.Size(780, 399);
             this.tabcadastrocliente.TabIndex = 0;
             this.tabcadastrocliente.Text = "Dados Pessoais";
-            // 
-            // tbId
-            // 
-            this.tbId.AutoSize = true;
-            this.tbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbId.Location = new System.Drawing.Point(20, 9);
-            this.tbId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tbId.Name = "tbId";
-            this.tbId.Size = new System.Drawing.Size(49, 15);
-            this.tbId.TabIndex = 18;
-            this.tbId.Text = "id teste:";
-            this.tbId.Click += new System.EventHandler(this.label42_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(147, 8);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 17;
             // 
             // abaEndereco
             // 
@@ -1802,7 +1778,5 @@
         private System.Windows.Forms.GroupBox gbComprovante;
         private System.Windows.Forms.GroupBox gbCartaobanco;
         private System.Windows.Forms.GroupBox gbComprovanteRes;
-        private System.Windows.Forms.Label tbId;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }
